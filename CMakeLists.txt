@@ -1,22 +1,22 @@
 
 ###########################################
-# CMAKELISTS : TEMPLATE PROJECT           #
+# CMAKELISTS : STARTER PROJECT            #
 ###########################################
 
 # SET PROJECT VARIABLES
 cmake_minimum_required(VERSION 3.26.0)
-project(template VERSION 0.1)
+project(starter VERSION 0.1)
 set(CMAKE_CXX_STANDARD_REQUIRED 11)
 set(CMAKE_CXX_FLAGS "-O2 -g -Wall -Werror")
 
 # SET PROJECT SRC/INC FILES
-set(template_src
+set(src
     ...)
-set(template_test_src
+set(test_src
     ...)
-set(template_inc
+set(inc
     ...)
-set(template_test_inc
+set(test_inc
     ...)
 
 # DEFINE PROJECT OPTIONS
@@ -26,20 +26,20 @@ option(TESTS "Build Tests" OFF)
 
 
 # DEFINE EXECUTABLES
-add_executable(template.o main/main.cpp ${template_src})
+add_executable(starter.o main/main.cpp ${src})
 if(TESTS)
     enable_testing()
-    add_executable(tests ext/googletest/googletest/src/gtest_main.cc ${template_test_src})
+    add_executable(tests ext/googletest/googletest/src/gtest_main.cc ${test_src})
 endif()
 
 # DEFINE INCLUDE DIRECTORIES
-target_include_directories(template.o
+target_include_directories(starter.o
     PRIVATE
-    ${template_inc})
+    ${inc})
 if(TESTS)
     target_include_directories(tests
         PRIVATE
-        ${template_test_inc})
+        ${test_inc})
 endif()
 
 # DEFINE SUBDIRECTORIES
