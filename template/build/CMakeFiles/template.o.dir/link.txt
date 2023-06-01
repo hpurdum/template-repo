@@ -1,0 +1,1 @@
+/usr/bin/c++ -O2 -g -Wall -Werror -g CMakeFiles/template.o.dir/main/main.cpp.o CMakeFiles/template.o.dir/src/sample/sample.cpp.o -o template.o 
