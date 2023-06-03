@@ -1,6 +1,6 @@
 // ===============================================================================================
 /**
- *   @ copyright Project - Copyright (c) 2023 Henry Purdum, Inc.
+ *   @copyright Project - Copyright (c) 2023 Henry Purdum, Inc.
  *   @file       main/main.cpp
  *   @author     Henry Purdum
  *   @date       06/01/2023
